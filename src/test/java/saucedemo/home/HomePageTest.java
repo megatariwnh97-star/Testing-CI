@@ -17,5 +17,6 @@ public class HomePageTest extends BaseTest {
 
         loginPage.login(config.getProperty("standardUser"), config.getProperty("password")); // ini diambil dari login test
         homePage.verifyOnHomepage(); // ini diambil dari home page
+        System.out.println("Anda telah berhasil login dan masuk kedalam Homepage");
     }
 }
