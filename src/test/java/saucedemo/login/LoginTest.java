@@ -11,11 +11,15 @@ public class LoginTest extends BaseTest{
     public void testLogin() {
         LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         loginPage.login(config.getProperty("standardUser"), config.getProperty("password"));
+        System.out.println("Login successfull");
     }
 
     public void testFailedLogin(){
         LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         loginPage.login(config.getProperty("failedUser"), config.getProperty("password"));
+        System.out.println("Login failed");
     }
+
+
 
 }
